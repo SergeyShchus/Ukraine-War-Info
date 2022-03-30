@@ -3,7 +3,7 @@ List of sites, channels, etc., where you can find information, photos, photos <b
 Wanna add a link to the list? Open an issue or contact me: [Telegram](http://t.me/shchus)
 
 ### Recourses table
-| name | lang | places | types | categories | description |
-|------|----|------|------|------|------------------|
-| [Axios](https://www.axios.com/) | en | #US #international | -----| #data| ------|
-|------|----|------|------|------|------------------|
+| name | lang | places  | categories | twitter |
+|------|----|------|------|------------------|
+| [Axios](https://www.axios.com/) | en | #US #international | #data| ------|
+| [Blacksky](https://www.blacksky.com/) | en |#US #international|#data #satellite|[Blacksky](https://twitter.com/BlackSky_Inc)|
