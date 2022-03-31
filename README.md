@@ -1,6 +1,6 @@
 # Russia's aggression against Ukraine in satellite images.
 
-[Irpin on fire](https://sergeyshchus.github.io/Ukraine-War-Info/map/irpin.html)
+[Irpin on fire](https://sergeyshchus.github.io/Ukraine-War-Info/map/irpin/map.html)
 
 The city, which for many was a dream, has disappeared. It became a ghost.
 
