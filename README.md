@@ -1,6 +1,6 @@
 # Russia's aggression against Ukraine in satellite images.
 
-[Irpin on fire](https://sergeyshchus.github.io/Ukraine-War-Info/map/irpin/map.html)
+## [Irpin on fire](https://sergeyshchus.github.io/Ukraine-War-Info/map/irpin/map.html)
 
 The city, which for many was a dream, has disappeared. It became a ghost.
 
@@ -10,11 +10,23 @@ Image created by [Sentinel Hub](https://sentinelshare.page.link/6NmG)
 
 
 
+## [Map of hostilities](https://sergeyshchus.github.io/Ukraine-War-Info/map/irpin/map.html)
+
+This is a map of the war of aggression between Russia and Belarus against Ukraine! Stop Putin!
+
+<a href="https://sergeyshchus.github.io/WAR"><img width="1241" alt="Map of hostilities" src="https://github.com/SergeyShchus/WAR/blob/main/image/warmap.png?raw=true"></a>
 
 
 
 
 
+--------------
+
+
+
+
+
+---------
 
 
 # Resources with information about the war in Ukraine
