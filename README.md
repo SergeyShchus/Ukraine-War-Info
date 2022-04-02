@@ -43,4 +43,5 @@ Wanna add a link to the list? Open an issue or contact me: [Telegram](http://t.m
 | [Radio Free Europe](https://www.rferl.org/) | en |#US #international|#text | |
 | [mapconcierge](https://cesium.com/ion/stories/viewer/?id=ac46c90c-6460-4a80-825d-9f1ef14016c4) | en |#Japan|#data #satellite| |
 |[Reuters](https://jp.reuters.com/news/picture/war-from-above-russias-invasion-of-ukrai-idJPRTS6IC8X) |en|#international|#text #data|------------------|
-|[Maxar](https://maxar.com) |en|#international|#data|Maxar](https://twitter.com/Maxar)|
+|[Maxar](https://maxar.com) |en|#international|#data|[Maxar](https://twitter.com/Maxar)|
+|[Nasa](https://earthobservatory.nasa.gov/images/149602/west-lothian-shale-bings) |en|#international|#data||
