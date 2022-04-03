@@ -9,8 +9,17 @@ The city, which for many was a dream, has disappeared. It became a ghost.
 Image created by [Sentinel Hub](https://sentinelshare.page.link/6NmG)
 
 
+## [Destroyed Mariupol](https://sergeyshchus.github.io/Ukraine-War-Info/map/mariupol/map.html)
 
-## [Map of hostilities](https://sergeyshchus.github.io/Ukraine-War-Info/map/irpin/map.html)
+The city, which for many was a dream, has disappeared. It became a ghost.
+
+<a href="https://sergeyshchus.github.io/Ukraine-War-Info/map/mariupol/map.html"><img width="1241" alt="Irpin march 23" src="https://github.com/SergeyShchus/Ukraine-War-Info/blob/main/satelliteimages/Mar.29_Mariupol,%20Ukraine_1.jpeg?raw=true"></a>
+
+Image created by [Sentinel Hub](https://sentinelshare.page.link/6NmG), Maxar
+
+
+
+## [Map of hostilities](https://sergeyshchus.github.io/WAR/)
 
 This is a map of the war of aggression between Russia and Belarus against Ukraine! Stop Putin!
 
