@@ -11,7 +11,7 @@ Image created by [Sentinel Hub](https://sentinelshare.page.link/6NmG)
 
 ## [Destroyed Mariupol](https://sergeyshchus.github.io/Ukraine-War-Info/map/mariupol/map.html)
 
-The city, which for many was a dream, has disappeared. It became a ghost.
+Russia continues to methodically destroy the port city in southern Ukraine. Large-scale destruction of residential buildings is clearly visible on satellite images.
 
 <a href="https://sergeyshchus.github.io/Ukraine-War-Info/map/mariupol/map.html"><img width="1241" alt="Irpin march 23" src="https://github.com/SergeyShchus/Ukraine-War-Info/blob/main/satelliteimages/Mar.29_Mariupol,%20Ukraine_1.jpeg?raw=true"></a>
 
