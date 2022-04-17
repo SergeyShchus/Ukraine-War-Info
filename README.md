@@ -68,3 +68,4 @@ Wanna add a link to the list? Open an issue or contact me: [Telegram](http://t.m
 |[Nasa](https://earthobservatory.nasa.gov/images/149602/west-lothian-shale-bings) |en|#international|#data||
 |[EarthExplorer](https://earthexplorer.usgs.gov) |eu|#EU|#data #satellite|------------------|
 |[LandsatLook](https://landsatlook.usgs.gov/explore) |eu|#EU|#data #satellite|------------------|
+|Mike Eckel | en |#US #international|#data #satellite|[Mike Eckel](https://twitter.com/Mike_Eckel)|
