@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Chernihiv</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Leaflet (JS/CSS) -->
+	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet-src.js"></script>
+	<script src="https://unpkg.com/leaflet-ui@0.4.5/dist/leaflet-ui-src.js"></script>
+
+	<script src="../dist/leaflet-kmz-src.js"></script>
+
+	<style>
+		html,
+		body,
+		.map {
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div id="map" class="map"></div>
+
+	<script>
+		var map = L.map('map', {
+			center: [51.496187, 31.290880],
+			zoom: 11,
+			mapTypeId: 'topo',
+			gestureHandling: false,
+			searchControl: false,
+			locateControl: false,
+			pegmanControl: false,
+			fullscreenControl: false,
+			minimapControl: false,
+			preferCanvas: true,
+			plugins: [
+				"@raruto/leaflet-elevation@1.3.x/dist/leaflet-elevation.css",
+				"@raruto/leaflet-elevation@1.3.x/dist/leaflet-elevation.js"
+			]
+		});
+
+		// Instantiate KMZ parser (async)
+		var kmz = L.kmzLayer(null, {
+			// geometryToLayer: function(data, xml) {
+			// 	let layer = this._geometryToLayer(data, xml);
+			// 	let el = xml.getElementsByTagName('GroundOverlay');
+			// 	for (let k = 0; k < el.length; k++) {
+			// 		l = _.parseGroundOverlay(el[k], data.properties);
+			// 		if (l) {
+			// 			layer.addLayer(l);
+			// 		}
+			// 	}
+			// 	return layer;
+			// }
+		}).addTo(map);
+
+		kmz.on('load', function(e) {
+			control.addOverlay(e.layer, e.name);
+			// e.layer.addTo(map);
+		});
+
+		// Add remote KMZ files as layers (NB if they are 3rd-party servers, they MUST have CORS enabled)
+		kmz.add('../satellitekmz/Feb.28, A blaze at a warehouse and destroyed fields in Chernihiv.kmz');
+		kmz.add('../satellitekmz/Feb.28, Damage caused to a bridge in Chernihiv (rotation).kmz');
+		kmz.add('../satellitekmz/Feb.28, Damage caused to a bridge in Chernihiv.kmz');
+		kmz.add('../satellitekmz/Feb.28, Russian military convoy making its way through a village near Chernihiv (rotation).kmz');
+		kmz.add('../satellitekmz/Feb.28, Russian military convoy making its way through a village near Chernihiv.kmz');
+		kmz.add('../satellitekmz/Feb.28, Ukrainian residents in line at a supermarket in Chernihiv.kmz');
+		
+
+		// var opts = {
+		// 	elevationControl: {
+		// 		url: "https://raruto.github.io/leaflet-elevation/examples/via-emilia.gpx",
+		// 		options: {
+		// 			theme: "lightblue-theme",
+		// 			collapsed: false,
+		// 			detached: false,
+		// 			summary: "inline",
+		// 			followMarker: false,
+		// 			position: 'bottomleft',
+		// 			collapsed: true,
+		// 		},
+		// 	},
+		// 	layersControl: {
+		// 		options: {
+		// 			collapsed: false,
+		// 		},
+		// 	},
+		// };
+
+		// var controlElevation;
+
+		// map.on('plugins_loaded', function() {
+		//
+		// 	controlElevation = L.control.elevation(opts.elevationControl.options);
+		// 	var controlLayer = L.control.layers(null, null, opts.layersControl.options);
+		//
+		// 	controlElevation.addTo(map);
+		// 	controlLayer.addTo(map);
+		//
+		// 	controlElevation.on('eledata_loaded', function(e) {
+		// 		controlLayer.addOverlay(e.layer, e.name);
+		// 	});
+		//
+		// 	controlElevation.load(opts.elevationControl.url);
+		//
+		// });
+
+		var control = L.control.layers(null, null, {
+			collapsed: false
+		}).addTo(map);
+	</script>
+
+	<a href="https://github.com/SergeyShchus/Ukraine-War-Info" class="view-on-github" style="position: fixed;top: 10px;left: calc(50% - 60px);z-index: 9999;"> <img alt="View on Github" src="https://github.com/SergeyShchus/Ukraine-War-Info/blob/main/view-on-github.png?raw=true" title="View on Github"
+		  width="163"> </a>
+
+</body>
+
+</html>
