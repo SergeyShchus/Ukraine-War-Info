@@ -63,6 +63,7 @@ Wanna add a link to the list? Open an issue or contact me: [Telegram](http://t.m
 | name | lang | places  | categories | twitter |
 |------|----|------|------|------------------|
 | [Sentinel-Hub](https://sentinel-hub.com/) | en | #europe #international | #data #satellite| ------|
+|[SentinelHub - Playground](https://apps.sentinel-hub.com/sentinel-playground/) | en | #europe #international | #data #satellite| ------|
 | [Planet](https://www.planet.com/) | en | #europe #international | #data #satellite| ------|
 | [Axios](https://www.axios.com/) | en | #US #international | #data| ------|
 | [Blacksky](https://www.blacksky.com/) | en |#US #international|#data #satellite|[Blacksky](https://twitter.com/BlackSky_Inc)|
