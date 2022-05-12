@@ -36,6 +36,20 @@ Image created by [Maxar](https://www.maxar.com)
 
 
 
+
+## [Chornobaivka-2](https://sergeyshchus.github.io/Ukraine-War-Info/map/Siverskyy_Donets/map.html)
+
+Unsuccessful Russian bridge
+
+<a href="https://sergeyshchus.github.io/Ukraine-War-Info/map/Siverskyy_Donets/map.html"><img width="1241" alt="Chernobaivka satellite imagery" src="https://github.com/SergeyShchus/Ukraine-War-Info/blob/main/satelliteimages/ponton.jpeg?raw=true"></a>
+
+Image created by [Maxar](https://www.maxar.com)
+
+
+
+
+
+
 ## [Map of hostilities](https://sergeyshchus.github.io/WAR/)
 
 This is a map of the war of aggression between Russia and Belarus against Ukraine! Stop Putin!
