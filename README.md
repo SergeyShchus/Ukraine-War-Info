@@ -45,7 +45,16 @@ Unsuccessful Russian bridge
 
 Image created by [Maxar](https://www.maxar.com)
 
+## [Kinburn](https://sergeyshchus.github.io/Ukraine-War-Info/map/Kinburn/map.html)
 
+A unique Kinburn Spit Reserve is being destroyed in the temporarily occupied Kherson region. Now there are fires in the Black Sea Biosphere Reserve of the National Academy of Sciences of Ukraine.
+
+May.09. Heroiske, Ukraine. Black Sea Biosphere Reserve of NAS of Ukraine
+
+
+<a href="https://sergeyshchus.github.io/Ukraine-War-Info/map/Kinburn/map.html"><img width="1241" alt="Chernobaivka satellite imagery" src="https://github.com/SergeyShchus/Ukraine-War-Info/blob/main/satelliteimages/May.09_Kinburn.jpg?raw=true"></a>
+
+📸 Sentinel-2  🛰️  image
 
 
 
