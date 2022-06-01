@@ -58,6 +58,16 @@ May.09. Heroiske, Ukraine. Black Sea Biosphere Reserve of NAS of Ukraine
 
 
 
+## [Liman](https://sergeyshchus.github.io/Ukraine-War-Info/map/Liman/map.html)
+
+Ukraine's armed forces withdraw only when there is nothing more to defend. The Russians are destroying everything they can get their hands on.
+
+<a href="https://sergeyshchus.github.io/Ukraine-War-Info/map/Liman/map.html"><img width="1241" alt="Liman" src="https://github.com/SergeyShchus/Ukraine-War-Info/blob/main/satelliteimages/Liman.jpeg?raw=true"></a>
+
+Image created by [Maxar](https://www.maxar.com)
+
+
+
 
 ## [Map of hostilities](https://sergeyshchus.github.io/WAR/)
 
