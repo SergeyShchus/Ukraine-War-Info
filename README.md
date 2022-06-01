@@ -57,6 +57,16 @@ May.09. Heroiske, Ukraine. Black Sea Biosphere Reserve of NAS of Ukraine
 📸 Sentinel-2  🛰️  image
 
 
+## [Snake Island](https://sergeyshchus.github.io/Ukraine-War-Info/map/Zmiinyi/map.html)
+
+The story of unsuccessful attempts by Russian troops to gain a foothold on Snake Island and a successful hunt for them by Ukrainian combat drones.
+
+
+<a href="https://sergeyshchus.github.io/Ukraine-War-Info/map/Zmiinyi/map.html"><img width="1241" alt="Maxar_Zmiinyi" src="https://github.com/SergeyShchus/Ukraine-War-Info/blob/main/satelliteimages/May.12_Maxar_Zmiinyi.jpeg?raw=true"></a>
+
+📸 [Maxar](https://www.maxar.com)  🛰️  image
+
+
 
 ## [Liman](https://sergeyshchus.github.io/Ukraine-War-Info/map/Liman/map.html)
 
