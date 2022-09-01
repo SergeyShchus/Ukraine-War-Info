@@ -89,6 +89,18 @@ This is a map of the war of aggression between Russia and Belarus against Ukrain
 
 
 
+
+## [Bomber planes](https://www.google.com/maps/d/viewer?mid=19FbyyoaKdmJI-nAZRYUKAFWc09uCW1w&hl=uk&ll=47.292631058106124%2C35.18135062742823&z=6)
+
+Planes that bomb Ukrainian cities are recorded on satellite images.
+
+<a href="https://www.google.com/maps/d/viewer?mid=19FbyyoaKdmJI-nAZRYUKAFWc09uCW1w&hl=uk&ll=47.292631058106124%2C35.18135062742823&z=6"><img width="1241" alt="Bomber planes" src="https://github.com/SergeyShchus/Ukraine-War-Info/blob/main/satelliteimages/airplains.PNG?raw=true"></a>
+
+
+
+
+
+
 --------------
 
 
