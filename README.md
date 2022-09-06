@@ -101,6 +101,18 @@ Planes that bomb Ukrainian cities are recorded on satellite images.
 
 
 
+## [Zaporizhzhia NPP occuped](https://sergeyshchus.github.io/Ukraine-War-Info/map/Zaporizhzhia_NPP/map.html)
+
+Fires and explosions at the occupied nuclear power plant.
+
+<a href="https://sergeyshchus.github.io/Ukraine-War-Info/map/Zaporizhzhia_NPP/map.html"><img width="1241" alt="Bomber planes" src="https://github.com/SergeyShchus/Ukraine-War-Info/blob/main/satelliteimages/Aug.29,%20Smoke%20is%20rising%20at%20Zaporizhzhia%20NPP.jpeg?raw=true"></a>
+
+
+
+
+
+
+
 --------------
 
 
