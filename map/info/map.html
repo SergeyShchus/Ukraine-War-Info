@@ -45,6 +45,30 @@
 				"@raruto/leaflet-elevation@1.3.x/dist/leaflet-elevation.js"
 			]
 		});
+		
+		 var track
+
+    var kml = fetch('../data/Території, окуповані до 2022.kml')
+      .then( res => res.text() )
+      .then( kmltext => {
+
+            // Create new kml overlay
+            parser = new DOMParser();
+            kml = parser.parseFromString(kmltext,"text/xml");
+            track = new L.KML(kml);
+            //console.log(kml)
+
+            //const track = new L.KML(kml)
+            map.addLayer(track)
+            // Adjust map to show the kml
+            const bounds = track.getBounds()
+            map.fitBounds( bounds )
+      });
+
+      $('sldOpacity').on('change', function(){
+   $('image-opacity').html(this.value);
+   track.setStyle({opacity: this.value, fillOpacity: this.value});
+ });
 
 		// Instantiate KMZ parser (async)
 		var kmz = L.kmzLayer(null, {
