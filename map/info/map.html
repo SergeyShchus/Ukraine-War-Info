@@ -2,123 +2,85 @@
 <html>
 
 <head>
-	<title>Chernihiv</title>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<!-- Leaflet (JS/CSS) -->
-	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet-src.js"></script>
-	<script src="https://unpkg.com/leaflet-ui@0.4.5/dist/leaflet-ui-src.js"></script>
-
-	<script src="../dist/leaflet-kmz-src.js"></script>
-
-	<style>
-		html,
-		body,
-		.map {
-			margin: 0;
-			padding: 0;
-			width: 100%;
-			height: 100%;
-		}
-	</style>
+    <title>Upload a KML file in Laravel using Ajax and display on a Leaflet Map</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+    <script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.3.1/leaflet-omnivore.min.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-
-	<div id="map" class="map"></div>
-
-	<script>
-		var map = L.map('map', {
-			center: [51.502112, 31.326593],
-			zoom: 17,
-			mapTypeId: 'topo',
-			gestureHandling: false,
-			searchControl: false,
-			locateControl: false,
-			pegmanControl: false,
-			fullscreenControl: false,
-			minimapControl: false,
-			preferCanvas: true,
-			plugins: [
-				"@raruto/leaflet-elevation@1.3.x/dist/leaflet-elevation.css",
-				"@raruto/leaflet-elevation@1.3.x/dist/leaflet-elevation.js"
-			]
-		});
-
-		// Instantiate KMZ parser (async)
-		var kmz = L.kmzLayer(null, {
-			// geometryToLayer: function(data, xml) {
-			// 	let layer = this._geometryToLayer(data, xml);
-			// 	let el = xml.getElementsByTagName('GroundOverlay');
-			// 	for (let k = 0; k < el.length; k++) {
-			// 		l = _.parseGroundOverlay(el[k], data.properties);
-			// 		if (l) {
-			// 			layer.addLayer(l);
-			// 		}
-			// 	}
-			// 	return layer;
-			// }
-		}).addTo(map);
-
-		kmz.on('load', function(e) {
-			control.addOverlay(e.layer, e.name);
-			// e.layer.addTo(map);
-		});
-
-		// Add remote KMZ files as layers (NB if they are 3rd-party servers, they MUST have CORS enabled)
-		kmz.add('../data/Події.kmz');
-	
-
-
-		
-
-		// var opts = {
-		// 	elevationControl: {
-		// 		url: "https://raruto.github.io/leaflet-elevation/examples/via-emilia.gpx",
-		// 		options: {
-		// 			theme: "lightblue-theme",
-		// 			collapsed: false,
-		// 			detached: false,
-		// 			summary: "inline",
-		// 			followMarker: false,
-		// 			position: 'bottomleft',
-		// 			collapsed: true,
-		// 		},
-		// 	},
-		// 	layersControl: {
-		// 		options: {
-		// 			collapsed: false,
-		// 		},
-		// 	},
-		// };
-
-		// var controlElevation;
-
-		// map.on('plugins_loaded', function() {
-		//
-		// 	controlElevation = L.control.elevation(opts.elevationControl.options);
-		// 	var controlLayer = L.control.layers(null, null, opts.layersControl.options);
-		//
-		// 	controlElevation.addTo(map);
-		// 	controlLayer.addTo(map);
-		//
-		// 	controlElevation.on('eledata_loaded', function(e) {
-		// 		controlLayer.addOverlay(e.layer, e.name);
-		// 	});
-		//
-		// 	controlElevation.load(opts.elevationControl.url);
-		//
-		// });
-
-		var control = L.control.layers(null, null, {
-			collapsed: false
-		}).addTo(map);
-	</script>
-
-	<a href="https://github.com/SergeyShchus/Ukraine-War-Info" class="view-on-github" style="position: fixed;top: 10px;left: calc(50% - 60px);z-index: 9999;"> <img alt="View on Github" src="https://github.com/SergeyShchus/Ukraine-War-Info/blob/main/view-on-github.png?raw=true" title="View on Github"
-		  width="163"> </a>
-
+    <div id="map" style="height: 600px"></div>  
+    <br />
+    <div class="container">
+        <h3 align="center">Uploading a KML file using Ajax and Displaying on a Leaflet Map</h3>
+        <br />
+        <form method="post" id="upload_form" enctype="multipart/form-data">
+            {{ csrf_field() }}
+            <div class="form-group">
+                <table class="table">
+                    <tr>
+                        <td width="40%" align="right"><label>Select File for Upload</label></td>
+                        <td width="30"><input type="file" name="select_file" id="select_file" /></td>
+                        <td width="30%" align="left"><input type="submit" name="upload" id="upload" class="btn btn-primary" value="Upload"></td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </div>
 </body>
 
 </html>
+
+<script>
+    // initialize Leaflet
+    var map = L.map('map').setView({
+        lon: -1.534,
+        lat: 47.213
+    }, 11);
+    // add the OpenStreetMap tiles
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap contributors</a>'
+    }).addTo(map);
+    // show the scale bar on the lower left corner
+    L.control.scale().addTo(map);
+    $(document).ready(function() {
+        $('#upload_form').on('submit', function(event) {
+            event.preventDefault();
+            $.ajax({
+                url: "{{ route('ajaxupload.action') }}",
+                method: "POST",
+                data: new FormData(this),
+                dataType: 'JSON',
+                contentType: false,
+                cache: false,
+                processData: false,
+                success: function(data) {
+                    $('#message').css('display', 'block');
+                    $('#message').html(data.message);
+                    $('#message').addClass(data.class_name);
+                    $('#uploaded_image').html(data.uploaded_image);
+                    var tmp = data.uploaded_image;
+                    console.log(tmp);
+                    fetch(tmp)  //get the location with the new name of the saved file
+                        .then(res => res.text())
+                        .then(kmltext => {
+                            // Create new kml overlay
+                            const track = new omnivore.kml.parse(kmltext);
+                            map.addLayer(track);    //add a layer with the coordinates in the file
+                            // Adjust map to show the kml
+                            const bounds = track.getBounds();
+                            map.fitBounds(bounds);
+                        }).catch((e) => {
+                            console.log(e);
+                        })
+                }
+            })
+        });
+    });
+</script>
