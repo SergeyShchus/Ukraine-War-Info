@@ -25,6 +25,19 @@ Image created by [Sentinel Hub](https://sentinelshare.page.link/6NmG), Maxar
 
 
 
+## [Chernigiv](https://sergeyshchus.github.io/Ukraine-War-Info/map/Chernihiv/map.html)
+
+Russia continues to methodically destroy the city. Chernigiv on satellite images.
+
+<a href="https://sergeyshchus.github.io/Ukraine-War-Info/map/Chernihiv/map.html"><img width="1241" alt="Destroyed Chernigiv" src="https://github.com/SergeyShchus/Ukraine-War-Info/blob/main/satelliteimages/Mar.16_A%20damaged%20Olympic%20sports%20training%20center,%20in%20Chernihiv,%20Ukraine.jpeg?raw=true"></a>
+
+Image created by [Sentinel Hub](https://sentinelshare.page.link/6NmG), Maxar
+
+
+
+
+
+
 ## [Chornobaivka](https://sergeyshchus.github.io/Ukraine-War-Info/map/chernobaivka/map.html)
 
 A very famous place in Ukraine, which for many is the final destination. Satellite images show another cluster of enemy forces at this location.
