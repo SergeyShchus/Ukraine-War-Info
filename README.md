@@ -124,6 +124,14 @@ Fires and explosions at the occupied nuclear power plant.
 
 
 
+## [Kherson will be deoccupied](https://sergeyshchus.github.io/Ukraine-War-Info/map/Cherson/map.html)
+
+Fires and explosions at the occupied nuclear power plant.
+
+<a href="https://sergeyshchus.github.io/Ukraine-War-Info/map/Cherson/map.html"><img width="1241" alt="Bomber planes" src="https://github.com/SergeyShchus/Ukraine-War-Info/blob/main/satelliteimages/Cherson_boat.jpeg?raw=true?raw=true"></a>
+
+
+
 
 
 --------------
