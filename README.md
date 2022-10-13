@@ -134,6 +134,19 @@ Run
 
 
 
+
+
+## [Crimean bridge](https://sergeyshchus.github.io/Ukraine-War-Info/map/Crimea_bridge/map.html)
+
+Камні з неба
+
+<a href="https://sergeyshchus.github.io/Ukraine-War-Info/map/Crimea_bridge/map.html"><img width="1241" alt="Bridge" src="https://github.com/SergeyShchus/Ukraine-War-Info/blob/main/satelliteimages/Kerch-bridge-crimea.jpg?raw=true"></a>
+
+
+
+
+
+
 --------------
 
 
