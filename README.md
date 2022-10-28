@@ -153,6 +153,23 @@ Run
 
 
 
+
+## [Anti-tank fortification, Donbas](https://sergeyshchus.github.io/Ukraine-War-Info/map/anti-tank/map.html)
+
+ Long defense trenches dug by the Wagner group, Donbas. They are seen behind the rows of anti-tank pyramids.
+
+<a href="https://sergeyshchus.github.io/Ukraine-War-Info/map/anti-tank/map.html"><img width="1241" alt="Bridge" src="https://github.com/SergeyShchus/Ukraine-War-Info/blob/main/satelliteimages/221021144010-02-hirske-ukraine-anti-tank-fortification.jpg?raw=true"></a>
+
+
+
+
+
+
+--------------
+
+
+
+
 ---------
 
 
