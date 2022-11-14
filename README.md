@@ -166,7 +166,8 @@ Run
 
 
 
-## [Anti-tank fortification, Donbas](https://sergeyshchus.github.io/Ukraine-War-Info/map/Crimea/map.html)
+## [🟦 Crimea 🟨](https://sergeyshchus.github.io/Ukraine-War-Info/map/Crimea/map.html)
+
 
 
 
