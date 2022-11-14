@@ -165,6 +165,19 @@ Run
 
 
 
+
+## [Anti-tank fortification, Donbas](https://sergeyshchus.github.io/Ukraine-War-Info/map/Crimea/map.html)
+
+
+
+<a href="https://sergeyshchus.github.io/Ukraine-War-Info/map/Crimea/map.html"><img width="1241" alt="Bridge" src="https://github.com/SergeyShchus/Ukraine-War-Info/blob/main/satelliteimages/Apr.29,%20Sevastopol%20submarin.jpeg?raw=true"></a>
+
+
+
+
+
+
+
 --------------
 
 
