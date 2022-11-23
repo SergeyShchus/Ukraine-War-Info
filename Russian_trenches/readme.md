@@ -33,3 +33,13 @@ Appearance 08-2022.
 ![Perekop](https://github.com/SergeyShchus/Ukraine-War-Info/blob/main/Russian_trenches/image/2022-11-15-Perekop_Sentinel-2.jpg?raw=true)
 
 ![Perekop](https://github.com/SergeyShchus/Ukraine-War-Info/blob/main/Russian_trenches/image/2022-11-15-Perekop_Sentinel-2-timelapse.gif?raw=true)
+
+
+
+## Hirske, Luhansk region, Ukraine. 
+Appearance 25-09-2022. 
+[Image 14-11-2022](https://sentinelshare.page.link/jHSU)
+
+![HavrylivkaDruha](https://github.com/SergeyShchus/Ukraine-War-Info/blob/main/Russian_trenches/image/2022-11-14-Hirske_Sentinel-2.jpg?raw=true)
+
+![HavrylivkaDruha](https://github.com/SergeyShchus/Ukraine-War-Info/blob/main/Russian_trenches/image/2022-11-14-Hirske_Sentinel-2-timelapse.gif?raw=true)
