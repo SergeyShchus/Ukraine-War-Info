@@ -176,6 +176,16 @@ Run
 
 
 
+## [Russian trenches](https://github.com/SergeyShchus/Ukraine-War-Info/blob/main/Russian_trenches/readme.md)
+
+
+
+
+<a href="https://github.com/SergeyShchus/Ukraine-War-Info/blob/main/Russian_trenches/readme.md"><img width="1241" alt="Bridge" src="https://github.com/SergeyShchus/Ukraine-War-Info/raw/main/Russian_trenches/image/2022-11-17-Solyane_Sentinel-2-timelapse.gif?raw=true"></a>
+
+
+
+
 
 
 
