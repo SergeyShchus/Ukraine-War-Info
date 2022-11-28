@@ -64,3 +64,15 @@ Appearance 25-10-2022.
 ![Velyka_Blagovishenka](https://github.com/SergeyShchus/Ukraine-War-Info/blob/main/Russian_trenches/image/Velyka_Blagovishenka_28-11-2022.jpg?raw=true)
 
 ![Velyka_Blagovishenka](https://github.com/SergeyShchus/Ukraine-War-Info/blob/main/Russian_trenches/image/Velyka_Blagovishenka_28-11-2022-timelapse.gif?raw=true)
+
+
+
+
+
+## Novotroitske, Cherson region, Ukraine. 
+Appearance 25-10-2022. 
+[Image 15-11-2022](https://sentinelshare.page.link/gCjr)
+
+![Novotroitske](https://github.com/SergeyShchus/Ukraine-War-Info/blob/main/Russian_trenches/image/Novotroitske_28-11-2022.jpg?raw=true)
+
+![Novotroitske](https://github.com/SergeyShchus/Ukraine-War-Info/blob/main/Russian_trenches/image/Novotroitske_28-11-2022-timelapse.gif?raw=true)
