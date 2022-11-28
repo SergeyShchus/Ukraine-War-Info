@@ -43,3 +43,24 @@ Appearance 25-09-2022.
 ![HavrylivkaDruha](https://github.com/SergeyShchus/Ukraine-War-Info/blob/main/Russian_trenches/image/2022-11-14-Hirske_Sentinel-2.jpg?raw=true)
 
 ![HavrylivkaDruha](https://github.com/SergeyShchus/Ukraine-War-Info/blob/main/Russian_trenches/image/2022-11-14-Hirske_Sentinel-2-timelapse.gif?raw=true)
+
+
+
+## Zirka, Cherson region, Ukraine. 
+Appearance 13-11-2022. 
+[Image 15-11-2022](https://sentinelshare.page.link/Kt1Y)
+
+![Zirka](https://github.com/SergeyShchus/Ukraine-War-Info/blob/main/Russian_trenches/image/Zirka_28-11-2022.jpg?raw=true)
+
+![Zirka](https://github.com/SergeyShchus/Ukraine-War-Info/blob/main/Russian_trenches/image/Zirka_28_11_2022-timelapse.gif?raw=true)
+
+
+
+
+## Velyka_Blagovishenka, Cherson region, Ukraine. 
+Appearance 25-10-2022. 
+[Image 15-11-2022](https://sentinelshare.page.link/J8jf)
+
+![Velyka_Blagovishenka](https://github.com/SergeyShchus/Ukraine-War-Info/blob/main/Russian_trenches/image/Velyka_Blagovishenka_28-11-2022.jpg?raw=true)
+
+![Velyka_Blagovishenka](https://github.com/SergeyShchus/Ukraine-War-Info/blob/main/Russian_trenches/image/Velyka_Blagovishenka_28-11-2022-timelapse.gif?raw=true)
