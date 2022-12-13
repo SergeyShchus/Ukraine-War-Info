@@ -217,3 +217,4 @@ Wanna add a link to the list? Open an issue or contact me: [Telegram](http://t.m
 |[EarthExplorer](https://earthexplorer.usgs.gov) |eu|#EU|#data #satellite|------------------|
 |[LandsatLook](https://landsatlook.usgs.gov/explore) |eu|#EU|#data #satellite|------------------|
 |Mike Eckel | en |#US #international|#data #satellite|[Mike Eckel](https://twitter.com/Mike_Eckel)|
+|Ukraine Crisis Hub | en |#UA #international|#data |[ACLED](https://acleddata.com/ukraine-crisis/)|
