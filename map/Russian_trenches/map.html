@@ -48,17 +48,17 @@
 
 		// Instantiate KMZ parser (async)
 		var kmz = L.kmzLayer(null, {
-			 geometryToLayer: function(data, xml) {
-			 	let layer = this._geometryToLayer(data, xml);
-			 	let el = xml.getElementsByTagName('GroundOverlay');
-			 	for (let k = 0; k < el.length; k++) {
-			 		l = _.parseGroundOverlay(el[k], data.properties);
-			 		if (l) {
-			 			layer.addLayer(l);
-			 		}
-			 	}
-			 	return layer;
-			 }
+			// geometryToLayer: function(data, xml) {
+			// 	let layer = this._geometryToLayer(data, xml);
+			// 	let el = xml.getElementsByTagName('GroundOverlay');
+			// 	for (let k = 0; k < el.length; k++) {
+			// 		l = _.parseGroundOverlay(el[k], data.properties);
+			// 		if (l) {
+			// 			layer.addLayer(l);
+			// 		}
+			// 	}
+			// 	return layer;
+			// }
 		}).addTo(map);
 
 		kmz.on('load', function(e) {
