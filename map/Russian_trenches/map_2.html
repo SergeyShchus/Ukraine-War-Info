@@ -55,10 +55,10 @@
 		});
 
 		// Add remote KMZ files as layers (NB if they are 3rd-party servers, they MUST have CORS enabled)
-		kmz.load('https://raruto.github.io/leaflet-kmz/examples/regions.kmz');
-		kmz.load('https://raruto.github.io/leaflet-kmz/examples/capitals.kmz');
-		kmz.load('https://raruto.github.io/leaflet-kmz/examples/globe.kmz');
-		kmz.load('https://raruto.github.io/leaflet-kmz/examples/etna.kmz');
+		kmz.load('../satellitekmz/regions.kmz');
+		kmz.load('../satellitekmz/capitals.kmz');
+		kmz.load('../satellitekmz/globe.kmz');
+		kmz.load('../satellitekmz/etna.kmz');
 
 	  var control = L.control.layers(null, null, { collapsed:false }).addTo(map);
 	</script>
