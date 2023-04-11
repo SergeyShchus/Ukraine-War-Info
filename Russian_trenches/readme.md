@@ -1,4 +1,7 @@
 
+[MAP](https://sergeyshchus.github.io/Ukraine-War-Info/map/Russian_trenches/map.html)
+
+
 ## Solyane, Crimea, Ukraine. 
 Appearance 08-09-2022. 
 [Image 17-11-2022](https://sentinelshare.page.link/zTK5)
