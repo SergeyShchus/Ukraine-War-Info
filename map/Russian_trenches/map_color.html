@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Карта зі штучними укріпленнями на сході України</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/leaflet/1.7.1/leaflet.css" />
+    <script src="https://cdn.jsdelivr.net/leaflet/1.7.1/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-omnivore@1.5.6/leaflet-omnivore.min.js"></script>
+  </head>
+  <body>
+    <div id="map" style="height: 100vh;"></div>
+    <script>
+      var map = L.map('map').setView([48.3794, 39.2376], 13); // задаємо координати центру карти та зум
+
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { // додаємо підложку OpenStreetMap
+        attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
+        maxZoom: 18,
+      }).addTo(map);
+
+      omnivore.kml('https://raw.githubusercontent.com/SergeyShchus/Ukraine-War-Info/main/Russian_trenches/data/trenches.kmz') // завантажуємо kmz-файл
+        .on('ready', function() { // коли завантаження завершено
+          this.eachLayer(function(layer) {
+            layer.setStyle({
+              color: 'red', // задаємо колір ліній
+            });
+          });
+          this.addTo(map); // додаємо лінії на карту
+          map.fitBounds(this.getBounds()); // підганяємо карта під розмір ліній
+        });
+    </script>
+  </body>
+</html>
