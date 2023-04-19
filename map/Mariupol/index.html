@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Карта з супутниковою підложкою Esri</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Підключення стилів Leaflet та Esri -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+	<link rel="stylesheet" href="https://unpkg.com/esri-leaflet@2.1.2/dist/esri-leaflet.css" />
+	<!-- Підключення скриптів Leaflet та Esri -->
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+	<script src="https://unpkg.com/esri-leaflet@2.1.2/dist/esri-leaflet.js"></script>
+	<!-- Задання стилів та висоти контейнера карти -->
+	<style>
+		#mapid {
+			height: 600px;
+			margin: 0;
+			padding: 0;
+		}
+	</style>
+</head>
+<body>
+	<!-- Контейнер для карти -->
+	<div id="mapid"></div>
+	<!-- Скрипт для створення та відображення карти -->
+	<script>
+		// Створення карти та задання початкових налаштувань
+		var mymap = L.map('mapid', {
+			center: [47.0967, 37.5433], // Координати міста Маріуполь
+			zoom: 14, // Приблизний масштаб
+			layers: [esriSat] // Задання підложки за замовчуванням
+		});
+
+		// Додавання шару меж міста Маріуполь
+		var polygon = L.polygon([
+			[47.1081, 37.5294],
+			[47.0902, 37.5673],
+			[47.0791, 37.5562],
+			[47.0819, 37.5456]
+		]).addTo(mymap);
+
+		// Створення об'єкту для супутникової підложки
+		var esriSat = L.esri.basemapLayer('Imagery').addTo(mymap);
+
+		// Додавання перемикача шарів для зміни підложки
+		var baseLayers = {
+			"Супутникова": esriSat,
+			"Картографічна": esriMap
+		};
+		L.control.layers(baseLayers).addTo(mymap);
+
+	</script>
+</body>
+</html>
