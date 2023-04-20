@@ -1,39 +1,32 @@
-<!DOCTYPE html>
 <html>
-<head>
-<meta charset=utf-8 />
-<title>KML Data</title>
-<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-<script src='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.js'></script>
-<link href='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.css' rel='stylesheet' />
-<style>
-  body { margin:0; padding:0; }
-  #map { position:absolute; top:0; bottom:0; width:100%; }
-</style>
-</head>
-<body>
-<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.2.0/leaflet-omnivore.min.js'></script>
+    <head>
+        <link rel="stylesheet" href="http://unpkg.com/leaflet@1.4.0/dist/leaflet.css" />
+        <script src="http://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+        <script src="./L.KML.js"></script>
+    </head>
+    <body>
+        <div style="width: 100vw; height: 100vh" id="map"></div>
+        <script type="text/javascript">
+            // Make basemap
+            const map = new L.Map('map', { center: new L.LatLng(58.4, 43.0), zoom: 11 });
+            const osm = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
 
-<div id='map'></div>
+            map.addLayer(osm);
 
-<script>
-L.mapbox.accessToken = '<your access token here>';
-var map = L.mapbox.map('map')
-    .addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/streets-v11'));
+            // Load kml file
+            fetch('../satellitekmz/trenches.kmz')
+                .then(res => res.text())
+                .then(kmltext => {
+                    // Create new kml overlay
+                    const parser = new DOMParser();
+                    const kml = parser.parseFromString(kmltext, 'text/xml');
+                    const track = new L.KML(kml);
+                    map.addLayer(track);
 
-// omnivore will AJAX-request this file behind the scenes and parse it:
-// note that there are considerations:
-// - The file must either be on the same domain as the page that requests it,
-//   or both the server it is requested from and the user's browser must
-//   support CORS.
-
-// Internally this uses the toGeoJSON library to decode the KML file
-// into GeoJSON
-var runLayer = omnivore.kml('/mapbox.js/assets/data/line.kml')
-    .on('ready', function() {
-        map.fitBounds(runLayer.getBounds());
-    })
-    .addTo(map);
-</script>
-</body>
+                    // Adjust map to show the kml
+                    const bounds = track.getBounds();
+                    map.fitBounds(bounds);
+                });
+        </script>
+    </body>
 </html>
