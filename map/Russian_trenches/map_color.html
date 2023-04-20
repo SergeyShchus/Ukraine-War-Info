@@ -1,8 +1,32 @@
 <html>
     <head>
-        <link rel="stylesheet" href="http://unpkg.com/leaflet@1.4.0/dist/leaflet.css" />
-        <script src="http://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
-        <script src="./L.KML.js"></script>
+<title>Карта зі штучними укріпленнями на Сході та Півдні України</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Leaflet (JS/CSS) -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css">
+	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+
+	<!-- JSZIP -->
+	<!-- <script src="https://unpkg.com/jszip@3.5.0/dist/jszip.min.js"></script> -->
+
+	<!-- @tmcw/togeojson -->
+	<!-- <script src="https://unpkg.com/@tmcw/togeojson@4.1.0/dist/togeojson.umd.js"></script> -->
+
+	<!-- Leaflet-KMZ -->
+	<script src="https://unpkg.com/leaflet-kmz@1.0.9/dist/leaflet-kmz-src.js"></script>
+
+	<style>
+		html,
+		body,
+		.map {
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			height: 100%;
+		}
+	</style>
     </head>
     <body>
         <div style="width: 100vw; height: 100vh" id="map"></div>
