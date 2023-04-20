@@ -1,61 +1,39 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-	<title>Карта зі штучними укріпленнями на Сході та Півдні України</title>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<!-- Leaflet (JS/CSS) -->
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css">
-	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
-
-	<!-- JSZIP -->
-	<!-- <script src="https://unpkg.com/jszip@3.5.0/dist/jszip.min.js"></script> -->
-
-	<!-- @tmcw/togeojson -->
-	<!-- <script src="https://unpkg.com/@tmcw/togeojson@4.1.0/dist/togeojson.umd.js"></script> -->
-
-	<!-- Leaflet-KMZ -->
-	<script src="https://unpkg.com/leaflet-kmz@1.0.9/dist/leaflet-kmz-src.js"></script>
-
-	<style>
-		html,
-		body,
-		.map {
-			margin: 0;
-			padding: 0;
-			width: 100%;
-			height: 100%;
-		}
-	</style>
+<meta charset=utf-8 />
+<title>KML Data</title>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<script src='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.css' rel='stylesheet' />
+<style>
+  body { margin:0; padding:0; }
+  #map { position:absolute; top:0; bottom:0; width:100%; }
+</style>
 </head>
-  
 <body>
+<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.2.0/leaflet-omnivore.min.js'></script>
 
-	<div id="map" class="map"></div>
+<div id='map'></div>
 
-	<script>
-	  var map = L.map('map');
-	  map.setView(new L.LatLng(47.694435, 34.062626), 7);
+<script>
+L.mapbox.accessToken = '<your access token here>';
+var map = L.mapbox.map('map')
+    .addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/streets-v11'));
 
-	  var OpenTopoMap = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
-	    maxZoom: 17,
-	    attribution: 'Map data: &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)',
-	    opacity: 0.90
-	  });
-	  OpenTopoMap.addTo(map);
+// omnivore will AJAX-request this file behind the scenes and parse it:
+// note that there are considerations:
+// - The file must either be on the same domain as the page that requests it,
+//   or both the server it is requested from and the user's browser must
+//   support CORS.
 
-      omnivore.kml('https://raw.githubusercontent.com/SergeyShchus/Ukraine-War-Info/main/Russian_trenches/data/trenches.kmz') // завантажуємо kmz-файл
-        .on('ready', function() { // коли завантаження завершено
-          this.eachLayer(function(layer) {
-            layer.setStyle({
-              color: 'red', // задаємо колір ліній
-            });
-          });
-          this.addTo(map); // додаємо лінії на карту
-          map.fitBounds(this.getBounds()); // підганяємо карта під розмір ліній
-        });
-    </script>
-  </body>
+// Internally this uses the toGeoJSON library to decode the KML file
+// into GeoJSON
+var runLayer = omnivore.kml('/mapbox.js/assets/data/line.kml')
+    .on('ready', function() {
+        map.fitBounds(runLayer.getBounds());
+    })
+    .addTo(map);
+</script>
+</body>
 </html>
