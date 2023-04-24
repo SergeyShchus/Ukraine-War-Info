@@ -113,11 +113,6 @@
 		//
 		// });
 
-		// load GeoJSON from an external file
-		$.getJSON("https://github.com/SergeyShchus/Ukraine-War-Info/blob/08542f7b578f5cd55307491de75ac7e18a8a8c12/Russian_trenches/data/trenches.geojson",function(data){
-		// add GeoJSON layer to the map once the file is loaded
-		L.geoJson(data).addTo(map);
-
 		var control = L.control.layers(null, null, {
 			collapsed: false
 		}).addTo(map);
