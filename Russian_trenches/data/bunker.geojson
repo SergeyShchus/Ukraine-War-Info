@@ -1,0 +1,21 @@
+{
+"type": "FeatureCollection",
+"name": "bunker",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::3857" } },
+"features": [
+{ "type": "Feature", "properties": { "OBJECTID": 1, "Anno": null, "Anno2": null, "Date": null }, "geometry": { "type": "Point", "coordinates": [ 4104712.811099998652935, 6046481.307700000703335 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 2, "Anno": null, "Anno2": null, "Date": null }, "geometry": { "type": "Point", "coordinates": [ 4077360.941599998623133, 6021025.945100001990795 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 3, "Anno": null, "Anno2": null, "Date": null }, "geometry": { "type": "Point", "coordinates": [ 3986977.705400001257658, 5992094.491899996995926 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 4, "Anno": null, "Anno2": null, "Date": null }, "geometry": { "type": "Point", "coordinates": [ 3931263.682, 6014614.729299999773502 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 5, "Anno": null, "Anno2": null, "Date": null }, "geometry": { "type": "Point", "coordinates": [ 3931468.7483000010252, 6014625.085500001907349 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 6, "Anno": "?", "Anno2": null, "Date": null }, "geometry": { "type": "Point", "coordinates": [ 4179765.103399999439716, 6053267.099799998104572 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 7, "Anno": null, "Anno2": null, "Date": null }, "geometry": { "type": "Point", "coordinates": [ 4223527.392799999564886, 6145312.670500002801418 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 8, "Anno": null, "Anno2": null, "Date": "05.04.23 00:00:00 (Фінляндія (літо))" }, "geometry": { "type": "Point", "coordinates": [ 3688938.131700001657009, 5656078.9868 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 9, "Anno": null, "Anno2": null, "Date": "05.04.23 00:00:00 (Фінляндія (літо))" }, "geometry": { "type": "Point", "coordinates": [ 3688838.059399999678135, 5656152.500900000333786 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 10, "Anno": null, "Anno2": null, "Date": null }, "geometry": { "type": "Point", "coordinates": [ 4410622.954599998891354, 6161928.6831 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 11, "Anno": null, "Anno2": null, "Date": null }, "geometry": { "type": "Point", "coordinates": [ 4177038.517000000923872, 6050520.750299997627735 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 12, "Anno": null, "Anno2": null, "Date": null }, "geometry": { "type": "Point", "coordinates": [ 4175924.593899998813868, 6050740.209799997508526 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 13, "Anno": null, "Anno2": null, "Date": null }, "geometry": { "type": "Point", "coordinates": [ 4179778.435100000351667, 6051727.777400001883507 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 14, "Anno": null, "Anno2": null, "Date": null }, "geometry": { "type": "Point", "coordinates": [ 4178594.684099998325109, 6051588.121299996972084 ] } }
+]
+}
