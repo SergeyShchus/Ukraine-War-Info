@@ -61,6 +61,13 @@
 		kmz.load('../satellitekmz/etna.kmz');
 
 	  var control = L.control.layers(null, null, { collapsed:false }).addTo(map);
+
+		// load GeoJSON from an external file
+		$.getJSON("Russian_trenches/data/trenches.geojson",function(data){
+			// add GeoJSON layer to the map once the file is loaded
+			L.geoJson(data).addTo(map);
+  });
+
 	</script>
 
 	<a href="https://github.com/Raruto/leaflet-kmz" class="view-on-github" style="position: fixed;top: 10px;left: calc(50% - 60px);z-index: 9999;" > <img alt="View on Github" src="https://raruto.github.io/img/view-on-github.png" title="View on Github" width="163"> </a>
