@@ -75,43 +75,7 @@
 		kmz.load('../satellitekmz/приклад знимку 2023-04-24-Sentinel-2.kmz');
 		
 
-		// var opts = {
-		// 	elevationControl: {
-		// 		url: "https://raruto.github.io/leaflet-elevation/examples/via-emilia.gpx",
-		// 		options: {
-		// 			theme: "lightblue-theme",
-		// 			collapsed: false,
-		// 			detached: false,
-		// 			summary: "inline",
-		// 			followMarker: false,
-		// 			position: 'bottomleft',
-		// 			collapsed: true,
-		// 		},
-		// 	},
-		// 	layersControl: {
-		// 		options: {
-		// 			collapsed: false,
-		// 		},
-		// 	},
-		// };
-
-		// var controlElevation;
-
-		// map.on('plugins_loaded', function() {
-		//
-		// 	controlElevation = L.control.elevation(opts.elevationControl.options);
-		// 	var controlLayer = L.control.layers(null, null, opts.layersControl.options);
-		//
-		// 	controlElevation.addTo(map);
-		// 	controlLayer.addTo(map);
-		//
-		// 	controlElevation.on('eledata_loaded', function(e) {
-		// 		controlLayer.addOverlay(e.layer, e.name);
-		// 	});
-		//
-		// 	controlElevation.load(opts.elevationControl.url);
-		//
-		// });
+	
 
 		var control = L.control.layers(null, null, {
 			collapsed: false
