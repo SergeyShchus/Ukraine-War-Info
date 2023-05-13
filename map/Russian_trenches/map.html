@@ -47,7 +47,7 @@
 		});
 
 		// Instantiate KMZ parser (async)
-		var kmz = L.kmzLayer(null, {
+		//var kmz = L.kmzLayer(null, {
 			// geometryToLayer: function(data, xml) {
 			// 	let layer = this._geometryToLayer(data, xml);
 			// 	let el = xml.getElementsByTagName('GroundOverlay');
@@ -59,7 +59,7 @@
 			// 	}
 			// 	return layer;
 			// }
-		}).addTo(map);
+		//}).addTo(map);
 
 		kmz.on('load', function(e) {
 			control.addOverlay(e.layer, e.name);
