@@ -46,15 +46,8 @@
 			]
 		});
 
-		var kmzStyle = {
-    	polylineOptions: {
-        color: 'red'
-    	}
-		};
-
 		// Instantiate KMZ parser (async)
 		var kmz = L.kmzLayer(null, {
-			kmzStyle: kmzStyle
 			// geometryToLayer: function(data, xml) {
 			// 	let layer = this._geometryToLayer(data, xml);
 			// 	let el = xml.getElementsByTagName('GroundOverlay');
@@ -78,14 +71,7 @@
 		kmz.load('../satellitekmz/території, окуповані після 2022.kmz');
 		kmz.load('../satellitekmz/other_fortifications.kmz');
 		kmz.load('../satellitekmz/bunker.kmz');
-		kmz.load('../satellitekmz/trenches.kmz', {
-			style: {
-				color: 'red'
-			},
-			onEachFeature: function(feature, layer) {
-				layer.bindPopup('Name: ' + feature.properties.name);
-			}
-		});
+		kmz.load('../satellitekmz/trenches.kmz', {style: {color: 'red'},onEachFeature: function(feature, layer) {layer.bindPopup('Name: ' + feature.properties.name);}});
 		kmz.load('../satellitekmz/приклад знимку 2023-04-24-Sentinel-2.kmz');
 		
 	
