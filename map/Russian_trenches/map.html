@@ -47,7 +47,18 @@
 		});
 
 		// Instantiate KMZ parser (async)
+
+		var kmzStyle = {
+			polylineOptions: {
+				color: 'red'
+			}
+		};
+
 		var kmz = L.kmzLayer(null, {
+			kmzStyle: kmzStyle
+		}).addTo(map);
+
+		//var kmz = L.kmzLayer(null, {
 			// geometryToLayer: function(data, xml) {
 			// 	let layer = this._geometryToLayer(data, xml);
 			// 	let el = xml.getElementsByTagName('GroundOverlay');
@@ -59,7 +70,7 @@
 			// 	}
 			// 	return layer;
 			// }
-		}).addTo(map);
+		//}).addTo(map);
 
 		kmz.on('load', function(e) {
 			control.addOverlay(e.layer, e.name);
