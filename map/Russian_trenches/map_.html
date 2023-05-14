@@ -2,15 +2,16 @@
 <html>
 
 <head>
-	<title>Боже, бомби Белгород</title>
+	<title>Leaflet-KMZ Example</title>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- Leaflet (JS/CSS) -->
-	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet-src.js"></script>
-	<script src="https://unpkg.com/leaflet-ui@0.4.5/dist/leaflet-ui-src.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 
-	<script src="../dist/leaflet-kmz-src.js"></script>
+	<!-- Leaflet-KMZ (JS) -->
+	<script src="https://unpkg.com/leaflet-kmz/dist/leaflet-kmz.min.js"></script>
 
 	<style>
 		html,
@@ -29,41 +30,29 @@
 	<div id="map" class="map"></div>
 
 	<script>
-	  var map = L.map('map');
-	  map.setView(new L.LatLng(43.5978, 12.7059), 5);
-
-	  var OpenTopoMap = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
-	    maxZoom: 17,
-	    attribution: 'Map data: &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)',
-	    opacity: 0.90
-	  });
-	  OpenTopoMap.addTo(map);
-
-		// Instantiate KMZ layer (async)
-		var kmz = L.kmzLayer().addTo(map);
-
-		kmz.on('load', function(e) {
-			control.addOverlay(e.layer, e.name);
-			// e.layer.addTo(map);
+		var map = L.map('map', {
+			center: [51.505, -0.09],
+			zoom: 13
 		});
 
-		// Add remote KMZ files as layers (NB if they are 3rd-party servers, they MUST have CORS enabled)
-		kmz.load('../satellitekmz/regions.kmz');
-		kmz.load('../satellitekmz/capitals.kmz');
-		kmz.load('../satellitekmz/globe.kmz');
-		kmz.load('../satellitekmz/etna.kmz');
+		// Instantiate KMZ parser
+		var kmz = L.kmzLayer().addTo(map);
 
-	  var control = L.control.layers(null, null, { collapsed:false }).addTo(map);
+		// Load KMZ files
+		kmz.load('../satellitekmz/trenches.kmz', {
+			style: {
+				color: 'red'
+			},
+			onEachFeature: function(feature, layer) {
+				layer.bindPopup('Name: ' + feature.properties.name);
+			}
+		});
 
-		// load GeoJSON from an external file
-		$.getJSON("https://github.com/SergeyShchus/Ukraine-War-Info/blob/08542f7b578f5cd55307491de75ac7e18a8a8c12/Russian_trenches/data/trenches.geojson",function(data){
-			// add GeoJSON layer to the map once the file is loaded
-			L.geoJson(data).addTo(map);
-  });
-
+		// Add layers to control
+		L.control.layers(null, {
+			"../satellitekmz/trenches.kmz": kmz.getLayers()[0]
+		}).addTo(map);
 	</script>
-
-	<a href="https://github.com/Raruto/leaflet-kmz" class="view-on-github" style="position: fixed;top: 10px;left: calc(50% - 60px);z-index: 9999;" > <img alt="View on Github" src="https://raruto.github.io/img/view-on-github.png" title="View on Github" width="163"> </a>
 
 </body>
 
