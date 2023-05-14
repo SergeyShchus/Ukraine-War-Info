@@ -2,16 +2,15 @@
 <html>
 
 <head>
-	<title>Leaflet-KMZ Example</title>
+	<title>Боже, бомби Белгород</title>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- Leaflet (JS/CSS) -->
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet-src.js"></script>
+	<script src="https://unpkg.com/leaflet-ui@0.4.5/dist/leaflet-ui-src.js"></script>
 
-	<!-- Leaflet-KMZ (JS) -->
-	<script src="https://unpkg.com/leaflet-kmz/dist/leaflet-kmz.min.js"></script>
+	<script src="../dist/leaflet-kmz-src.js"></script>
 
 	<style>
 		html,
@@ -31,8 +30,8 @@
 
 	<script>
 		var map = L.map('map', {
-			center: [51.505, -0.09],
-			zoom: 13
+			center: [47.694435, 34.062626],
+			zoom: 7
 		});
 
 		// Instantiate KMZ parser
@@ -53,6 +52,9 @@
 			"../satellitekmz/trenches.kmz": kmz.getLayers()[0]
 		}).addTo(map);
 	</script>
+
+	<a href="https://github.com/SergeyShchus/Ukraine-War-Info/blob/main/Russian_trenches/readme.md" class="view-on-github" style="position: fixed;top: 10px;left: calc(50% - 60px);z-index: 9999;"> <img alt="View on Github" src="https://github.com/SergeyShchus/Ukraine-War-Info/blob/main/view-on-github.png?raw=true" title="View on Github"
+		width="163"> </a>
 
 </body>
 
