@@ -35,7 +35,16 @@
 		});
 
 		// Instantiate KMZ parser
-		var kmz = L.kmzLayer().addTo(map);
+		//var kmz = L.kmzLayer().addTo(map);
+
+		var kmzStyle = {
+			polylineOptions: {
+				color: 'red'
+			};
+			
+			var kmz = L.kmzLayer(null, {
+				kmzStyle: kmzStyle
+			}).addTo(map);
 
 		// Load KMZ files
 		kmz.load('../satellitekmz/trenches.kmz', {
