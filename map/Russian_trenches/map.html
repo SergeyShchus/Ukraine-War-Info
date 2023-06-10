@@ -72,13 +72,6 @@
 			// }
 		//}).addTo(map);
 
-		// Add GeoJSON layer from URL
-		fetch("../satellitekmz/trenches.geojson")
-		.then(response => response.geojson())
-		.then(data => {
-		L.geoJSON(data).addTo(map);
-		})
-		.catch(error => console.error(error));
 
 
 		kmz.on('load', function(e) {
